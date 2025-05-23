@@ -17,13 +17,14 @@
         android:padding="16dp"
         android:gravity="center_vertical">
 
+        <!-- replace with your own drawable -->
         <ImageView
             android:id="@+id/ivAchievementIcon"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/ic_medal" <!-- replace with your own drawable -->
-        android:contentDescription="Achievement Icon"
-        android:tint="?attr/colorPrimary" />
+            android:src="@drawable/ic_medal"
+            android:contentDescription="Achievement Icon"
+            android:tint="?attr/colorPrimary" />
 
         <LinearLayout
             android:layout_width="0dp"

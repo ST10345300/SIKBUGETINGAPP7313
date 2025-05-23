@@ -60,4 +60,3 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
-    >
