@@ -34,7 +34,7 @@ class OnboardingFragment : Fragment() {
 
         adapter = OnboardingAdapter(onboardingItems)
         binding.viewPager.adapter = adapter
-        TabLayoutMediator(binding.tabIndicator, binding.viewPager) { _, _ -> }.attach()
+
         binding.btnContinue.setOnClickListener {
             if (binding.viewPager.currentItem < onboardingItems.size - 1) {
                 binding.viewPager.currentItem += 1
