@@ -4,12 +4,17 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/onboardingFragment">
 
-    <fragment android:id="@+id/onboardingFragment" android:name="com.example.sikbudget.ui.onboarding.OnboardingFragment" >
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.sikbugetingapp7313.ui.onboarding.OnboardingFragment">
         <action
             android:id="@+id/action_onboardingFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
-    <fragment android:id="@+id/loginFragment" android:name="com.example.sikbudget.ui.auth.LoginFragment" >
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.sikbugetingapp7313.ui.auth.LoginFragment">
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -17,12 +22,21 @@
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
     </fragment>
-    <fragment android:id="@+id/registerFragment" android:name="com.example.sikbudget.ui.auth.RegisterFragment" >
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.sikbugetingapp7313.ui.auth.RegisterFragment">
         <action
             android:id="@+id/action_registerFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
-    <fragment android:id="@+id/homeFragment" android:name="com.example.sikbudget.ui.home.HomeFragment" >
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.sikbugetingapp7313.ui.home.HomeFragment">
         <action
             android:id="@+id/action_homeFragment_to_addBudgetFragment"
             app:destination="@id/addBudgetFragment" />
@@ -36,8 +50,73 @@
             android:id="@+id/action_homeFragment_to_achievementsFragment"
             app:destination="@id/achievementsFragment" />
     </fragment>
-    <fragment android:id="@+id/addBudgetFragment" android:name="com.example.sikbudget.ui.addbudget.AddBudgetFragment" />
-    <fragment android:id="@+id/statsFragment" android:name="com.example.sikbudget.ui.stats.StatsFragment" />
-    <fragment android:id="@+id/settingsFragment" android:name="com.example.sikbudget.ui.settings.SettingsFragment" />
-    <fragment android:id="@+id/achievementsFragment" android:name="com.example.sikbudget.ui.achievements.AchievementsFragment" />
+
+    <fragment
+        android:id="@+id/addBudgetFragment"
+        android:name="com.example.sikbugetingapp7313.ui.addbudget.AddBudgetFragment" >
+        <action
+            android:id="@+id/action_addBudgetFragment_to_statsFragment"
+            app:destination="@id/statsFragment" />
+        <action
+            android:id="@+id/action_addBudgetFragment_to_achievementsFragment"
+            app:destination="@id/achievementsFragment" />
+        <action
+            android:id="@+id/action_addBudgetFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_addBudgetFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.example.sikbugetingapp7313.ui.stats.StatsFragment" >
+        <action
+            android:id="@+id/action_statsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_statsFragment_to_addBudgetFragment"
+            app:destination="@id/addBudgetFragment" />
+        <action
+            android:id="@+id/action_statsFragment_to_achievementsFragment"
+            app:destination="@id/achievementsFragment" />
+        <action
+            android:id="@+id/action_statsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.sikbugetingapp7313.ui.settings.SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_statsFragment"
+            app:destination="@id/statsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_achievementsFragment"
+            app:destination="@id/achievementsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_addBudgetFragment"
+            app:destination="@id/addBudgetFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/achievementsFragment"
+        android:name="com.example.sikbugetingapp7313.ui.achievements.AchievementsFragment" >
+        <action
+            android:id="@+id/action_achievementsFragment_to_addBudgetFragment"
+            app:destination="@id/addBudgetFragment" />
+        <action
+            android:id="@+id/action_achievementsFragment_to_statsFragment"
+            app:destination="@id/statsFragment" />
+        <action
+            android:id="@+id/action_achievementsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_achievementsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
 </navigation>

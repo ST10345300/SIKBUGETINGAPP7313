@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:text="Stats will be shown here"
+        android:text="Settings go here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>
